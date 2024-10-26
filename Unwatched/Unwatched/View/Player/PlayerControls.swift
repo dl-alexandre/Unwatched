@@ -69,7 +69,7 @@ struct PlayerControls: View {
                         if fullscreenControlsSetting != .disabled && !UIDevice.requiresFullscreenWebWorkaround {
                             RotateOrientationButton()
                         }
-                        pipButton
+                        PipButton()
                     }
                     .environment(\.symbolVariants, .fill)
 
@@ -135,15 +135,6 @@ struct PlayerControls: View {
         }
         .onHover { over in
             autoHideVM.setKeepVisible(over, "hover")
-        }
-    }
-
-    var pipButton: some View {
-        Button {
-            player.pipEnabled.toggle()
-        } label: {
-            Image(systemName: player.pipEnabled ? "pip.exit" : "pip.enter")
-                .outlineToggleModifier(isOn: false, isSmall: true)
         }
     }
 
