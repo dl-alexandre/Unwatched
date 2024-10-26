@@ -1915,6 +1915,22 @@
         }
       }
     },
+    "enterPip" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pip aktivieren"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enable Pip"
+          }
+        }
+      }
+    },
     "enterUrls" : {
       "localizations" : {
         "de" : {
@@ -2023,6 +2039,22 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Exit Fullscreen"
+          }
+        }
+      }
+    },
+    "exitPip" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pip deaktivieren"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Disable Pip"
           }
         }
       }
