@@ -68,8 +68,8 @@ struct PlayerControls: View {
                         )
                         if fullscreenControlsSetting != .disabled && !UIDevice.requiresFullscreenWebWorkaround {
                             RotateOrientationButton()
-                            pipButton
                         }
+                        pipButton
                     }
                     .environment(\.symbolVariants, .fill)
 
@@ -99,7 +99,7 @@ struct PlayerControls: View {
                             .frame(height: 0)
                     }
                 }
-                .padding(.horizontal, compactSize ? 20 : 5)
+                .padding(.horizontal)
                 .frame(maxWidth: 1000)
 
                 if !player.embeddingDisabled && !compactSize && !compactHeight {

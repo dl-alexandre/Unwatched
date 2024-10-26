@@ -24,6 +24,7 @@ struct RotateOrientationButton: View {
                 Label("rotateLeft", systemImage: "arrowshape.turn.up.left.fill")
             }
         }
+        .padding(-2)
     }
 }
 
