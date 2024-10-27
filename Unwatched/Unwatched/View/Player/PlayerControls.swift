@@ -49,7 +49,12 @@ struct PlayerControls: View {
                     Spacer()
                 }
 
-                ChapterMiniControlView(setShowMenu: setShowMenu, showInfo: showInfo)
+                if showInfo {
+                    DescriptionMiniProgressBar()
+                }
+
+                ChapterMiniControlView(setShowMenu: setShowMenu)
+                    .padding(.horizontal)
 
                 if !player.embeddingDisabled && !compactSize && !compactHeight {
                     Spacer()

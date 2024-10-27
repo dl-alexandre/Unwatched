@@ -61,6 +61,8 @@
 		8823EB762B54FB510010A12F /* apiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8823EB752B54FB510010A12F /* apiKey.swift */; };
 		8823EB782B5519C60010A12F /* SubStateOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8823EB772B5519C60010A12F /* SubStateOverview.swift */; };
 		88250C612B49273100174C8D /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88250C602B49273100174C8D /* Date.swift */; };
+		88296ADA2CCEE8E300E96D3C /* DescriptionMiniProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88296AD92CCEE8E300E96D3C /* DescriptionMiniProgressBar.swift */; };
+		88296ADB2CCEE8E300E96D3C /* DescriptionMiniProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88296AD92CCEE8E300E96D3C /* DescriptionMiniProgressBar.swift */; };
 		882A750A2C74A6A40051BBF0 /* ChapterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882A75092C74A6A40051BBF0 /* ChapterService.swift */; };
 		882A750B2C74A6A40051BBF0 /* ChapterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882A75092C74A6A40051BBF0 /* ChapterService.swift */; };
 		882A75102C74A7070051BBF0 /* ChapterServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882A750F2C74A7070051BBF0 /* ChapterServiceTests.swift */; };
@@ -533,6 +535,7 @@
 		8823EB752B54FB510010A12F /* apiKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apiKey.swift; sourceTree = "<group>"; };
 		8823EB772B5519C60010A12F /* SubStateOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubStateOverview.swift; sourceTree = "<group>"; };
 		88250C602B49273100174C8D /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		88296AD92CCEE8E300E96D3C /* DescriptionMiniProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionMiniProgressBar.swift; sourceTree = "<group>"; };
 		882A75092C74A6A40051BBF0 /* ChapterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterService.swift; sourceTree = "<group>"; };
 		882A750F2C74A7070051BBF0 /* ChapterServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterServiceTests.swift; sourceTree = "<group>"; };
 		882FBA7D2B905F2500213CEF /* UnwatchedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnwatchedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1148,6 +1151,7 @@
 				8804A3EC2B8B6B5B00D3F4F1 /* DescriptionDetailView.swift */,
 				883CA8182B5BB2FB00028D52 /* ChapterMiniControlView.swift */,
 				8817FA9E2C30668E002DE44F /* ChangeChapterButtonStyle.swift */,
+				88296AD92CCEE8E300E96D3C /* DescriptionMiniProgressBar.swift */,
 			);
 			path = Chapter;
 			sourceTree = "<group>";
@@ -1687,6 +1691,7 @@
 				889AF9132C50ECE7001CEDE6 /* SubscriptionSearchBar.swift in Sources */,
 				CD5AF8472C8AD25A00D18628 /* PlayerManager+Playback.swift in Sources */,
 				889AF9142C50ECE7001CEDE6 /* LibraryView.swift in Sources */,
+				88296ADB2CCEE8E300E96D3C /* DescriptionMiniProgressBar.swift in Sources */,
 				889AF9152C50ECE7001CEDE6 /* AddToLibraryView.swift in Sources */,
 				889AF9162C50ECE7001CEDE6 /* WatchHistoryView.swift in Sources */,
 				889AF9172C50ECE7001CEDE6 /* DebugView.swift in Sources */,
@@ -1930,6 +1935,7 @@
 				88F1EE502B5D31D6009866A0 /* BrowserManager.swift in Sources */,
 				883EE0962B7ABD5700D0A83A /* SleepTimerViewModel.swift in Sources */,
 				88146F3F2C74EDDC00704B90 /* ChapterService+SponserBlock.swift in Sources */,
+				88296ADA2CCEE8E300E96D3C /* DescriptionMiniProgressBar.swift in Sources */,
 				88C205282B516D2A008EC51D /* ChapterListItem.swift in Sources */,
 				881F57432C4A830300559BF9 /* OrientationManager.swift in Sources */,
 				8804A3F42B8B8D6E00D3F4F1 /* VideoPlayerFooter.swift in Sources */,
