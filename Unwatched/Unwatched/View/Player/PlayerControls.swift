@@ -25,6 +25,7 @@ struct PlayerControls: View {
     let compactSize: Bool
     let showInfo: Bool
     let horizontalLayout: Bool
+    let enableHideControls: Bool
 
     let setShowMenu: () -> Void
     let markVideoWatched: (_ showMenu: Bool, _ source: VideoSource) -> Void
@@ -51,6 +52,7 @@ struct PlayerControls: View {
 
                 if showInfo {
                     DescriptionMiniProgressBar()
+                        .padding(.vertical, 10)
                 }
 
                 ChapterMiniControlView(setShowMenu: setShowMenu)
@@ -74,7 +76,10 @@ struct PlayerControls: View {
                         if fullscreenControlsSetting != .disabled && !UIDevice.requiresFullscreenWebWorkaround {
                             RotateOrientationButton()
                         }
-                        PipButton()
+
+                        if !UIDevice.isMac {
+                            PipButton()
+                        }
                     }
                     .environment(\.symbolVariants, .fill)
 
@@ -92,7 +97,7 @@ struct PlayerControls: View {
                         NextVideoButton(markVideoWatched: markVideoWatched)
                             .frame(maxWidth: .infinity)
 
-                        if UIDevice.requiresFullscreenWebWorkaround && compactSize {
+                        if enableHideControls {
                             HideControlsButton()
                         }
                     }
@@ -174,6 +179,7 @@ struct PlayerControls: View {
     PlayerControls(compactSize: false,
                    showInfo: false,
                    horizontalLayout: false,
+                   enableHideControls: false,
                    setShowMenu: { },
                    markVideoWatched: { _, _ in },
                    sleepTimerVM: SleepTimerViewModel())

@@ -15,8 +15,8 @@ struct PipButton: View {
             hapticToggle.toggle()
             player.pipEnabled.toggle()
         } label: {
-            Image(systemName: player.pipEnabled ? "pip.exit" : "pip.enter")
-                .outlineToggleModifier(isOn: false, isSmall: true)
+            Image(systemName: "pip")
+                .outlineToggleModifier(isOn: player.pipEnabled, isSmall: true)
         }
         .sensoryFeedback(Const.sensoryFeedback, trigger: hapticToggle)
     }
